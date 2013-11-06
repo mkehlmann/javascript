@@ -642,7 +642,7 @@
     }
     ```
 
-  - Use `// TODO:` to annotate solutions to problems
+  - Use `/* TODO: */` to annotate solutions to problems
 
     ```javascript
     function Calculator() {
