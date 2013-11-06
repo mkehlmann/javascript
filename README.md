@@ -20,7 +20,6 @@
   1. [Semicolons](#semicolons)
   1. [Type Casting & Coercion](#type-coercion)
   1. [Naming Conventions](#naming-conventions)
-  1. [Constructors](#constructors)
   1. [Events](#events)
   1. [Modules](#modules)
   1. [jQuery](#jquery)
