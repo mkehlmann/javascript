@@ -20,7 +20,6 @@
   1. [Semicolons](#semicolons)
   1. [Type Casting & Coercion](#type-coercion)
   1. [Naming Conventions](#naming-conventions)
-  1. [Accessors](#accessors)
   1. [Constructors](#constructors)
   1. [Events](#events)
   1. [Modules](#modules)
@@ -736,7 +735,7 @@
 
     // good
     function() {
-        var name;
+    ∙∙∙∙var name;
     }
     ```
   - Place 1 space before the leading brace.
@@ -744,7 +743,7 @@
     ```javascript
     // bad
     function test(){
-      console.log('test');
+        console.log('test');
     }
 
     // good
@@ -1060,61 +1059,6 @@
     ```
 
     **[[⬆]](#TOC)**
-
-
-## <a name='accessors'>Accessors</a>
-
-  - Accessor functions for properties are not required
-  - If you do make accessor functions use getVal() and setVal('hello')
-
-    ```javascript
-    // bad
-    dragon.age();
-
-    // good
-    dragon.getAge();
-
-    // bad
-    dragon.age(25);
-
-    // good
-    dragon.setAge(25);
-    ```
-
-  - If the property is a boolean, use isVal() or hasVal()
-
-    ```javascript
-    // bad
-    if (!dragon.age()) {
-      return false;
-    }
-
-    // good
-    if (!dragon.hasAge()) {
-      return false;
-    }
-    ```
-
-  - It's okay to create get() and set() functions, but be consistent.
-
-    ```javascript
-    function Jedi(options) {
-      options || (options = {});
-      var lightsaber = options.lightsaber || 'blue';
-      this.set('lightsaber', lightsaber);
-    }
-
-    Jedi.prototype.set = function(key, val) {
-      this[key] = val;
-    };
-
-    Jedi.prototype.get = function(key) {
-      return this[key];
-    };
-    ```
-
-    **[[⬆]](#TOC)**
-
 
 ## <a name='constructors'>Constructors</a>
 
