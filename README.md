@@ -21,8 +21,6 @@
   1. [Type Casting & Coercion](#type-coercion)
   1. [Naming Conventions](#naming-conventions)
   1. [Modules](#modules)
-  1. [jQuery](#jquery)
-  1. [ES5 Compatibility](#es5)
   1. [Testing](#testing)
   1. [Performance](#performance)
   1. [Resources](#resources)
@@ -921,28 +919,6 @@
     });
     ```
 
-  - Use PascalCase when naming constructors or classes
-
-    ```javascript
-    // bad
-    function user(options) {
-      this.name = options.name;
-    }
-
-    var bad = new user({
-      name: 'nope'
-    });
-
-    // good
-    function User(options) {
-      this.name = options.name;
-    }
-
-    var good = new User({
-      name: 'yup'
-    });
-    ```
-
   - Use a leading underscore `_` when naming private properties
 
     ```javascript
@@ -1026,76 +1002,6 @@
     ```
 
     **[[⬆]](#TOC)**
-
-
-## <a name='jquery'>jQuery</a>
-
-  - Prefix jQuery object variables with a `$`.
-
-    ```javascript
-    // bad
-    var sidebar = $('.sidebar');
-
-    // good
-    var $sidebar = $('.sidebar');
-    ```
-
-  - Cache jQuery lookups.
-
-    ```javascript
-    // bad
-    function setSidebar() {
-      $('.sidebar').hide();
-
-      // ...stuff...
-
-      $('.sidebar').css({
-        'background-color': 'pink'
-      });
-    }
-
-    // good
-    function setSidebar() {
-      var $sidebar = $('.sidebar');
-      $sidebar.hide();
-
-      // ...stuff...
-
-      $sidebar.css({
-        'background-color': 'pink'
-      });
-    }
-    ```
-
-  - For DOM queries use Cascading `$('.sidebar ul')` or parent > child `$('.sidebar > ul')`. [jsPerf](http://jsperf.com/jquery-find-vs-context-sel/16)
-  - Use `find` with scoped jQuery object queries.
-
-    ```javascript
-    // bad
-    $('ul', '.sidebar').hide();
-
-    // bad
-    $('.sidebar').find('ul').hide();
-
-    // good
-    $('.sidebar ul').hide();
-
-    // good
-    $('.sidebar > ul').hide();
-
-    // good
-    $sidebar.find('ul');
-    ```
-
-    **[[⬆]](#TOC)**
-
-
-## <a name='es5'>ECMAScript 5 Compatibility</a>
-
-  - Refer to [Kangax](https://twitter.com/kangax/)'s ES5 [compatibility table](http://kangax.github.com/es5-compat-table/)
-
-  **[[⬆]](#TOC)**
-
 
 ## <a name='testing'>Testing</a>
 
