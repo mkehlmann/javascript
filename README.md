@@ -947,6 +947,8 @@
 
 ## <a name='modules'>Modules</a>
 
+  - Avoid writing inline javascript in HTML or Dust pages whenever possible. Inline javascript is impossible to unit test, is more difficult to debug, and is not our best practice. Instead...
+  
   - All scripts should be defined as requirejs modules (http://requirejs.org/docs/api.html#define)
 
   - Here is an example module with a dependency on jQuery
