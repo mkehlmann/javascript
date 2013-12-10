@@ -978,15 +978,14 @@
 
 ## <a name='testing'>Testing</a>
 
-  - **Yup.**
+  **We use the following for testing**
+  - [mocha](http://visionmedia.github.io/mocha/) (Framework)
+  - [chai](http://chaijs.com/) (Assertion Library)
+  - [blanket](http://blanketjs.org/) (Code Coverage)
+  
+Test can be written in either BDD or TDD format, using any of the assertion styles provided by chai (Should, Expect, Assert)
 
-    ```javascript
-    function() {
-      return true;
-    }
-    ```
-
-    **[[⬆]](#TOC)**
+  **[[⬆]](#TOC)**
 
 
 ## <a name='performance'>Performance</a>
@@ -998,7 +997,6 @@
   - [jQuery Find vs Context, Selector](http://jsperf.com/jquery-find-vs-context-sel/13)
   - [innerHTML vs textContent for script text](http://jsperf.com/innerhtml-vs-textcontent-for-script-text)
   - [Long String Concatenation](http://jsperf.com/ya-string-concat)
-  - Loading...
 
   **[[⬆]](#TOC)**
 
@@ -1022,7 +1020,8 @@
   - [Conditional Callbacks](https://github.com/airbnb/javascript/issues/52)
 
 **Further Reading**
-
+  - [SuperheroJS](http://superherojs.com/)
+  - [Front-End Bookmarks](https://github.com/dypsilon/frontend-dev-bookmarks)
   - [Understanding JavaScript Closures](http://javascriptweblog.wordpress.com/2010/10/25/understanding-javascript-closures/) - Angus Croll
   - [Basic JavaScript for the impatient programmer](http://www.2ality.com/2013/06/basic-javascript.html) - Dr. Axel Rauschmayer
 
