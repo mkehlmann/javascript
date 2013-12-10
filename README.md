@@ -1,6 +1,6 @@
 ﻿# SALT JavaScript Style Guide() {
 
-*A mostly reasonable approach to JavaScript*
+*A mostly reasonable approach to JavaScript.*
 *Based on [airbnb guide](https://github.com/airbnb/javascript)*
 
 ## <a name='TOC'>Table of Contents</a>
