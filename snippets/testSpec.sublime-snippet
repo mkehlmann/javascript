@@ -1,0 +1,21 @@
+<snippet>
+    <content><![CDATA[
+/*global describe, it, chai, sinon */
+define([
+${1:'insert depdendencies'}
+], function() {
+
+    /* default to assert style, replace this if you prefer 'should' or 'expect'. */
+    var assert = chai.assert;
+
+    describe(${3:'insert section description (this will group tests together)'}, function() {
+        it(${4:'insert test specific description here'}, function(){
+            ${0://test spec's body goes here}
+            //assert.equal(0, 0);
+        });
+    });
+});]]></content>
+    <tabTrigger>spec</tabTrigger>
+    <scope>source.js</scope>
+    <description>Framework Spec Shell</description>
+</snippet>

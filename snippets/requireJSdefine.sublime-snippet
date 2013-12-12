@@ -1,0 +1,14 @@
+<snippet>
+<content>
+<![CDATA[
+define([
+    '${0:dependencies}'
+], function (${1:modules}) {
+    ${2:// module body goes here...}
+});
+]]>
+</content>
+    <tabTrigger>define</tabTrigger>
+    <scope>source.js</scope>
+    <description>RequireJS Define</description>
+</snippet>
