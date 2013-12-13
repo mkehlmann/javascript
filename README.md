@@ -942,6 +942,25 @@
       console.log(msg);
     };
     ```
+    
+  -  Use a 'js-' prefix for classes in DOM elements for javascript hooks. This helps us separate javascript classes from CSS classes, thereby helping us avoid breaking javascript when making CSS changes (and vice-versa)
+    
+    ```html
+
+    <!-- bad -->
+    <a class="toggle-widget">Click me!</a>
+    
+    <!-- If you're using the 'toggle-widget' class for javascript and CSS, 
+    removing this for styling changes will also break javascript -->
+    
+    
+    
+    <!-- good -->
+    <a class="js-toggle-widget toggle-widget">Click me!</a>
+    
+    <!-- Use 'js-toggle-widget' for any javascript code required for this link. 
+    Now you can edit/remove the class 'toggle-widget' for style changes without fear -->
+    ```
 
     **[[⬆]](#TOC)**
 
